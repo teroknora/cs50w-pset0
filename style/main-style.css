@@ -36,6 +36,10 @@ h1 {
     font-size: 4em;    
 }
 
+h3 {
+
+    margin-left: 1.5em;
+}
 footer {
 
     position: fixed;
@@ -72,14 +76,22 @@ input[type^="text"]:hover, input[type^="text"]:focus  {
     border-radius: 1px;
     height: auto;
     padding: auto;
+    width: 75%;
   
 }
 
 #a-search input[type^="text"]:hover, input[type^="text"]:focus  { 
 
     box-shadow: none;
+
    
    
+}
+
+#a-search input[type^="submit"] {
+
+    margin-left: 80.55%;
+
 }
 
 input[type^="submit"] {
@@ -122,8 +134,21 @@ input[type^="submit"]:hover {
 .form-group {
 
     display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin: .25em 1.5em;
 }
 
+#a-search {
+
+    width: 100%;
+   
+}
+
+#a-form {
+
+    width: 70%;
+}
 
 #logo {
 
@@ -156,7 +181,6 @@ form {
     display: flex;
     flex-direction:column;
     justify-content: center;
-   
     width: 40%;
 }
 
