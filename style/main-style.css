@@ -58,6 +58,16 @@ input[type^="text"] {
     color:rgb(53, 53, 53);
 }
 
+input[type^="text"]:hover, input[type^="text"]:focus  { 
+
+    box-shadow: .2px .7px 3px 2px rgb(167, 166, 166, .4);
+}
+
+input[type^="text"]:focus  { 
+    outline: none;
+    box-shadow: .2px .7px 3px 2px rgb(167, 166, 166, .4);
+}
+
 input[type^="submit"] {
 
     background-color: rgb(223, 223, 223, .3);
