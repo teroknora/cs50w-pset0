@@ -61,11 +61,13 @@ input[type^="text"] {
 input[type^="text"]:hover, input[type^="text"]:focus  { 
 
     box-shadow: .2px .7px 3px 2px rgb(167, 166, 166, .4);
+    transition-timing-function: ease;
 }
 
 input[type^="text"]:focus  { 
     outline: none;
     box-shadow: .2px .7px 3px 2px rgb(167, 166, 166, .4);
+    
 }
 
 input[type^="submit"] {
