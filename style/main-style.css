@@ -65,10 +65,21 @@ input[type^="text"]:hover, input[type^="text"]:focus  {
     transition-duration: 250ms;
 }
 
-input[type^="text"]:focus  { 
-    outline: none;
-    box-shadow: .2px .7px 3px 2px rgb(167, 166, 166, .4);
-    
+
+#a-search input[type^="text"] {
+
+    border: 1px solid rgb(180, 180, 180, .55);
+    border-radius: 1px;
+    height: auto;
+    padding: auto;
+  
+}
+
+#a-search input[type^="text"]:hover, input[type^="text"]:focus  { 
+
+    box-shadow: none;
+   
+   
 }
 
 input[type^="submit"] {
