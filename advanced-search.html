@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="style/main-style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+        <title>Advanced Search</title>
+    </head>
+    <body>
+        <nav>
+            <h1 class="nav-logo"><span id="blue" aria-hidden="true">G</span><span id="red" aria-hidden="true">o</span><span id="yellow" aria-hidden="true">o</span><span id="blue" aria-hidden="true">g</span><span id="green" aria-hidden="true">l</span><span id="red" aria-hidden="true">e</span> <span id="blue" aria-hidden="true">C</span><span id="red" aria-hidden="true">l</span><span id="yellow" aria-hidden="true">o</span><span id="blue" aria-hidden="true">n</span><span id="green" aria-hidden="true">e</span>
+            </h1>
+            <a href="#">About</a>
+            <a class="right" href="index.html">Google Search</a>
+        </nav>
+        <main>
+           <header><h2>Advanced Search</h2></header>
+
+            <div id="a-search">
+                <h3>Find Pages With...</h3>
+                <form id="a-form" action="https://google.com/search">
+                    <div class="form-group">
+                        <lable for="words">all these words:</lable>
+                        <input type="text" name="q" id="words">
+                    </div>
+                    <div>
+                        <lable for="exact">this exact word or phrase:</lable>
+                        <input type="text" name="q" id="exact">
+                    </div>
+                    <div>
+                        <lable for="any">any of these words:</lable>
+                        <input type="text" name="q" id="any">
+                    </div>
+                    <div>
+                        <lable for="none">none of these words:</lable>
+                        <input type="text" name="q" id="none">
+                    </div>
+                    <input type="submit" value="Advanced Search">
+                </form>
+            </div>
+        </main>
+        <footer>
+            <small>A project for Harvard's CS50W 2021</small>
+        </footer>
+    </body>
+</html>
