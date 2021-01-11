@@ -80,6 +80,7 @@ input[type^="submit"]:hover {
     flex-basis: 0;
     border-radius: 4px;
     font-size: 1em;
+    cursor: pointer;
 }
 
 .right {
