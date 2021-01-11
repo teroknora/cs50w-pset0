@@ -1,6 +1,9 @@
 body {
 
     font-family: 'Roboto', sans-serif;
+    position: absoulte;
+    left: 0;
+
     
 }
 
@@ -20,7 +23,7 @@ nav a {
 
     margin: 1.25em 1em;
     color: rgb(104, 104, 104);
-    float: left;
+    display: inline-block;
     text-decoration: none;
 }
 
@@ -34,6 +37,19 @@ h1 {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;   
     font-size: 4em;    
+}
+
+header {
+
+  
+    margin-left: 0;
+    right: 0;
+    margin-top: 3.5em;
+    padding: .3em;
+    border-bottom: 1px solid rgba(207, 86, 86, 0.3);
+    color: rgba(184, 38, 38, 0.9); 
+ 
+    
 }
 
 h3 {
@@ -123,12 +139,15 @@ input[type^="submit"]:hover {
 .right {
 
   float: right;
+  display: inline-block;
     
 }
 
 .nav-logo {
 
-    font-size: small;
+    font-size: 1.5em;
+    margin: .5em .4em 0 .25em;
+    display: inline-block;
 }
 
 .form-group {
@@ -138,6 +157,9 @@ input[type^="submit"]:hover {
     justify-content: space-between;
     margin: .25em 1.5em;
 }
+
+
+
 
 #a-search {
 
@@ -162,7 +184,6 @@ input[type^="submit"]:hover {
 #main {
 
  width: 100%;
- 
 
 }
 
