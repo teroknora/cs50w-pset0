@@ -73,11 +73,10 @@ input[type^="submit"] {
 input[type^="submit"]:hover {
 
     background-color: rgb(238, 237, 237, .6);;
-    padding: .75em 1.1em;
+    padding: .7em 1.2em;
     margin: 1em auto;
     box-sizing: border-box;
-    box-shadow: .3px .3px 3px  rgb(145, 143, 143, .7);
-    
+    box-shadow: .3px .3px 3px rgb(145, 143, 143, .7);
     flex-basis: 0;
     border-radius: 4px;
     font-size: 1em;
