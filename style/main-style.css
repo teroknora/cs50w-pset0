@@ -70,6 +70,8 @@ input[type^="text"] {
     padding-left: 1em;
     height: 2.5em; 
     color:rgb(53, 53, 53);
+    
+    
 }
 
 input[type^="text"]:hover, input[type^="text"]:focus  { 
