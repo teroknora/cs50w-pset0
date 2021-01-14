@@ -106,7 +106,7 @@ input[type^="submit"] {
 
     background-color: rgb(223, 223, 223, .3);
     padding: .7em 1.2em;
-    margin: 1.4em auto;
+    margin: 1.4em 1em;
     border: none;
     flex-basis: 0;
     border-radius: 4px;
@@ -118,7 +118,7 @@ input[type^="submit"]:hover {
 
     background-color: rgb(238, 237, 237, .6);;
     padding: .7em 1.2em;
-    margin: 1.4em auto;
+    margin: 1.4em 1em;
     box-sizing: border-box;
     box-shadow: .3px .3px 3px rgb(145, 143, 143, .7);
     flex-basis: 0;
@@ -149,7 +149,11 @@ input[type^="submit"]:hover {
     margin: .25em 1.5em;
 }
 
+.btn-group {
 
+    display: flex;
+    justify-content: center;
+}
 #a-search {
 
     width: 100%;
