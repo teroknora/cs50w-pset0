@@ -70,7 +70,7 @@ input[type^="text"] {
     padding-left: 1em;
     height: 2.5em; 
     color:rgb(53, 53, 53);
-    
+    flex: 0 0 1;
     
 }
 
@@ -108,7 +108,7 @@ input[type^="submit"] {
     padding: .7em 1.2em;
     margin: 1.4em 1em;
     border: none;
-    flex-basis: 0;
+    flex-basis: auto;
     border-radius: 4px;
     font-size: 1em;
     box-sizing: border-box;
@@ -163,6 +163,10 @@ input[type^="submit"]:hover {
 
     width: 70%;
 }
+#test {
+
+    min-width: 250px;
+}
 
 #logo {
 
@@ -173,9 +177,13 @@ input[type^="submit"]:hover {
     margin-bottom: -2em;
 }
 
-#main {
+main {
 
- width: 100%;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 4em;
+
 }
 
 #search {
