@@ -155,7 +155,6 @@ input[type^="submit"]:hover {
     background: linear-gradient(#4d90fe, #4787ed); /* 4d90fe #4787ed */
     border-color: #2762c0;
     box-shadow: none;
-   
 } 
 
 
@@ -214,6 +213,16 @@ input[type^="submit"]:hover {
     justify-content: center;
     padding-top: 9em;
     margin-bottom: -2em;
+}
+
+#logo > h2 {
+
+    font-size: medium;
+    align-self: flex-end;
+    margin-left: -2em;
+    margin-bottom: 2.3em;
+    
+
 }
 
 #red {
