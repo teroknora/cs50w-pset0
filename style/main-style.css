@@ -34,7 +34,7 @@ main {
     display:flex;
     justify-content: center;
     flex-direction: column;
-    margin-bottom: 4em;
+    margin-bottom: 7em;
 }
 
 h1 {
@@ -137,7 +137,9 @@ input[type^="submit"]:hover {
 
 #a-search input[type^="submit"] {
 
-    margin-left: 80.55%;
+    position: absolute;
+    right: .5em;
+    bottom: -5em;
 }
 
 .nav-logo {
@@ -155,6 +157,16 @@ input[type^="submit"]:hover {
     margin: .25em 1.5em;
 }
 
+.form-group > div {
+
+    min-width: 250px;
+}
+
+.form-group > input {
+
+    min-width: 35em;
+}
+
 .btn-group {
 
     display: flex;
@@ -169,15 +181,14 @@ input[type^="submit"]:hover {
 #a-search {
 
     width: 100%;
+    
 }
 
 #a-form {
 
+    position: relative;
     width: 70%;
-}
-#test {
-
-    min-width: 250px;
+    min-width: 50em;
 }
 
 #logo {
