@@ -123,7 +123,8 @@ input[type^="submit"]:hover {
 
 #a-search input[type^="text"] {
 
-    border: 1px solid rgb(180, 180, 180, .55);
+    border: 1px solid #d9d9d9;
+    border-top: 1px solid #c0c0c0;
     border-radius: 1px;
     height: auto;
     padding: auto;
@@ -132,15 +133,31 @@ input[type^="submit"]:hover {
 
 #a-search input[type^="text"]:hover, #a-search input[type^="text"]:focus  { 
 
-    box-shadow: none;   
+    box-shadow: none;  
+ 
 }
 
 #a-search input[type^="submit"] {
 
     position: absolute;
-    right: .5em;
+    right: .7em;
     bottom: -5em;
+    background-color: #4c8efa;
+    color: white;
+    border: 1px solid #3079ed;
+    font-weight: bold;
+    font-size: small;
 }
+
+
+#a-search input[type^="submit"]:hover {
+    background-color: none;
+    background: linear-gradient(#4d90fe, #4787ed); /* 4d90fe #4787ed */
+    border-color: #2762c0;
+    box-shadow: none;
+   
+} 
+
 
 .nav-logo {
 
@@ -181,7 +198,6 @@ input[type^="submit"]:hover {
 #a-search {
 
     width: 100%;
-    
 }
 
 #a-form {
