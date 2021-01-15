@@ -1,8 +1,6 @@
 body {
 
     font-family: 'Roboto', sans-serif;
-    position: absoulte;
-    left: 0;
 }
 
 nav {
@@ -34,7 +32,7 @@ main {
     display:flex;
     justify-content: center;
     flex-direction: column;
-    margin-bottom: 7em;
+    margin-bottom: 8em;
 }
 
 h1 {
@@ -42,6 +40,7 @@ h1 {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;   
     font-size: 4em;    
+    transition: all .2s linear;
 }
 
 header {
@@ -218,7 +217,7 @@ input[type^="submit"]:hover {
     .form-group > input {
 
         
-        min-width: 20em;
+       min-width: 100%;
         margin-left: 0;
         margin-right: 0;
     }
@@ -226,25 +225,9 @@ input[type^="submit"]:hover {
     #a-search input[type^="text"] {
 
         width: 90%;
-    }
-
-
-    #a-form { 
-
-            width: 100%;
-            min-width: 22em;
-            margin-right: 1em;
-    }
-
+        min-width: 90%;
     
-    #a-search input[type^="submit"] {
-
-                position: static;
-                width: 100%;
-                margin: .5em auto;
-                
     }
-
 }
 
 #logo {
@@ -254,6 +237,7 @@ input[type^="submit"]:hover {
     justify-content: center;
     padding-top: 9em;
     margin-bottom: -2em;
+    transition: all .2s linear;
 }
 
 #logo > h2 {
@@ -282,4 +266,48 @@ input[type^="submit"]:hover {
 #green {
 
     color: #34a853;
+}
+
+@media only screen and (max-width: 585px) {
+
+    input[type^="text"] { 
+
+        max-width: 90%;
+    }
+
+
+    #a-form { 
+
+            width: 100%;
+            min-width: 22em;
+            margin-right: 1em;
+    }
+
+    
+    #a-search input[type^="submit"] {
+
+                position: static;
+                width: 100%;
+                margin: .5em auto;
+                
+    }
+    
+    #logo {
+
+        padding-top: 4em;
+        margin-bottom: -1.5em;
+    }
+
+    h1 {
+
+        font-size: 3.2em;
+    
+    }
+
+    #logo > h2 { 
+
+        margin-bottom: 2em;
+
+    }
+
 }
