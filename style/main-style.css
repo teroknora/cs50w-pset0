@@ -206,6 +206,47 @@ input[type^="submit"]:hover {
     min-width: 50em;
 }
 
+@media only screen and (max-width: 802px) {
+
+    .form-group{
+       
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    .form-group > input {
+
+        
+        min-width: 20em;
+        margin-left: 0;
+        margin-right: 0;
+    }
+       
+    #a-search input[type^="text"] {
+
+        width: 90%;
+    }
+
+
+    #a-form { 
+
+            width: 100%;
+            min-width: 22em;
+            margin-right: 1em;
+    }
+
+    
+    #a-search input[type^="submit"] {
+
+                position: static;
+                width: 100%;
+                margin: .5em auto;
+                
+    }
+
+}
+
 #logo {
 
     display: flex;  
