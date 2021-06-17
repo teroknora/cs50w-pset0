@@ -1,5 +1,24 @@
 /* refactoring in progress, please excuse the mess */
 
+/*================================== TOC ======================================*/
+/*=============================================================================*/
+
+/*============================= Main Elements =================================*/
+/*============================= Forms and Inputs ==============================*/
+/*============================= Advanced Search ===============================*/
+/*============================= Google Letters Colors + Utils =================*/
+/*============================= Media Queries =================================*/  
+
+/*
+*******
+******
+****
+**
+*/
+
+
+/*============================= Main Elements =================================*/
+
 body {
 
     font-family: 'Roboto', sans-serif;
@@ -29,12 +48,29 @@ nav a:hover {
     color:rgb(63, 63, 63);
 }
 
+.nav-logo {
+
+    font-size: 1.5em;
+    margin: .5em .4em 0 .25em;
+    display: inline-block;
+}
+
 main {
 
     display:flex;
     justify-content: center;
     flex-direction: column;
     margin-bottom: 8em;
+}
+
+#logo {
+
+    display: flex;  
+    width: 100%;
+    justify-content: center;
+    padding-top: 9em;
+    margin-bottom: -2em;
+    /* transition: all .2s linear; */
 }
 
 #logo > h1 {
@@ -45,6 +81,19 @@ main {
    /* transition: all .2s linear; */
 }
 
+#logo > h2 {
+
+    font-size: medium;
+    align-self: flex-end;
+    margin-left: -2em;
+    margin-bottom: 2.3em;
+}
+
+h3 {
+
+    margin-left: 1.25em;
+}
+
 header {
 
     margin-top: 3.5em;
@@ -53,11 +102,6 @@ header {
     color: rgba(184, 38, 38, 0.9);   
 }
 
-h3 {
-
-    margin-left: 1.25em;
-
-}
 footer {
 
     position: fixed;
@@ -69,11 +113,25 @@ footer {
     width: 100%;
 }
 
+
+/*============================= Forms and Inputs ==============================*/
 form {
 
     display: flex;
     flex-direction:column;
     justify-content: center;  
+}
+
+
+.form-group > input {
+
+    min-width: 35em;
+}
+
+.btn-group {
+
+    display: flex;
+    justify-content: center;
 }
 
 /* width + margin: 0 auto to center at fixed width */
@@ -122,6 +180,11 @@ input[type^="submit"]:hover {
     cursor: pointer;
 }
 
+
+/*============================= Advanced Search ===============================*/
+
+
+
 #a-search input[type^="text"] {
 
     border: 1px solid #d9d9d9;
@@ -135,7 +198,6 @@ input[type^="submit"]:hover {
 #a-search input[type^="text"]:hover, #a-search input[type^="text"]:focus  { 
 
     box-shadow: none;  
- 
 }
 
 #a-search input[type^="submit"] {
@@ -150,7 +212,6 @@ input[type^="submit"]:hover {
     font-size: small;
 }
 
-
 #a-search input[type^="submit"]:hover {
     background-color: none;
     background: linear-gradient(#4d90fe, #4787ed); /* 4d90fe #4787ed */
@@ -158,43 +219,6 @@ input[type^="submit"]:hover {
     box-shadow: none;
 } 
 
-
-.nav-logo {
-
-    font-size: 1.5em;
-    margin: .5em .4em 0 .25em;
-    display: inline-block;
-}
-
-.form-group {
-
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    margin: .25em 1.5em;
-}
-
-.form-group > div {
-
-    min-width: 250px;
-}
-
-.form-group > input {
-
-    min-width: 35em;
-}
-
-.btn-group {
-
-    display: flex;
-    justify-content: center;
-}
-
-.right {
-
-    float: right;
-  }
-  
 #a-search {
 
     width: 100%;
@@ -206,49 +230,20 @@ input[type^="submit"]:hover {
     width: 70%;
     min-width: 50em;
 }
+  
+.form-group {
 
-@media only screen and (max-width: 802px) {
-
-    .form-group{
-       
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        width: 100%;
-    }
-
-    .form-group > input {
-
-        
-       min-width: 100%;
-        margin-left: 0;
-        margin-right: 0;
-    }
-       
-    #a-search input[type^="text"] {
-
-        width: 90%;
-        min-width: 90%;
-    
-    }
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin: .25em 1.5em;
 }
 
-#logo {
-
-    display: flex;  
-    width: 100%;
-    justify-content: center;
-    padding-top: 9em;
-    margin-bottom: -2em;
-    /* transition: all .2s linear; */
+.form-group > div {
+    min-width: 15.6rem;
 }
 
-#logo > h2 {
-
-    font-size: medium;
-    align-self: flex-end;
-    margin-left: -2em;
-    margin-bottom: 2.3em;
-}
+/*============================= Google Letters Colors + Utils =================*/
 
 #red {
 
@@ -270,46 +265,84 @@ input[type^="submit"]:hover {
     color: #34a853;
 }
 
-@media only screen and (max-width: 585px) {
+.right {
+
+    float: right;
+  }
+
+
+/*============================= Media Queries =================================*/   
+
+
+
+
+@media only screen and (max-width: 800px) {
+
+
+    .form-group {
+       
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        width: 95%;
+    }
+
+    .form-group > input {
+
+        
+       min-width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+       
+    #a-search input[type^="text"] {
+
+        width: 90%;
+        min-width: 90%;
+    
+    }
 
     input[type^="text"] { 
 
         max-width: 90%;
     }
 
-
     #a-form { 
 
-            width: 100%;
-            min-width: 22em;
-            margin-right: 1em;
+        display: flex;
+        width: 100%;
+        min-width: 22em;
+        margin-right: 1em;
     }
 
-    
     #a-search input[type^="submit"] {
 
-                position: static;
-                width: 100%;
-                margin: .5em auto;
-                
+        position: static;
+        width: 100%;
+        margin: .5em auto;          
     }
     
     #logo {
 
-        padding-top: 4em;
+        padding-top: 5rem;
         margin-bottom: -1.5em;
     }
 
     #logo > h1 {
 
-        font-size: 3.2em;
-    
+        font-size: 3.8em;
     }
 
     #logo > h2 { 
 
-        margin-bottom: 2em;
-
+        margin-bottom: 2.1em;
     }
 
 }
+
+@media only screen and (max-width: 349px) {
+
+    #logo > h1 {
+        
+        font-size: 2.6em;
+    }
+   }
